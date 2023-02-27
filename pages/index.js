@@ -29,7 +29,7 @@ export default function Home({ data })
         </nav>
       </header>
 
-      <HomePageContent />
+      <HomePageContent data={data} />
 
       <footer className={styles.footer}>
         <p>@ {year} Some Dumbass Project</p>
