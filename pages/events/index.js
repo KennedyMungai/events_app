@@ -24,3 +24,12 @@ const Events = () =>
 }
 
 export default Events
+
+export function getServerSideProps()
+{
+    return {
+        props: {
+            title: 'Sup Niggaz'
+        }
+    }
+}
