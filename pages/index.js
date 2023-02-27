@@ -29,7 +29,7 @@ export default function Home({ title })
       </header>
 
       <main className={styles.main}>
-        <Link href="/">
+        <Link href="/events/london">
           <Image src="" alt="" />
           <h2>Events In London</h2>
           <p>
@@ -41,7 +41,7 @@ export default function Home({ title })
             nisi magni esse?
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/events/la">
           <Image src="" alt="" />
           <h2>Events In LA</h2>
           <p>
@@ -53,7 +53,7 @@ export default function Home({ title })
             nisi magni esse?
           </p>
         </Link>
-        <Link href="/">
+        <Link href="/events/lima">
           <Image src="" alt="" />
           <h2>Events In Lima</h2>
           <p>
