@@ -41,7 +41,6 @@ export async function getStaticProps(context)
 {
     const id = context?.params.category
     const { allEvents } = await import('../../../data/data.json')
-    // console.log(id)
 
     const data = allEvents.filter((event) => event.city === id)
 
