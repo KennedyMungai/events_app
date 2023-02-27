@@ -3,8 +3,6 @@ import React from 'react'
 
 const EventPage = ({ data }) =>
 {
-    console.log(data)
-
     return (
         <div>
             <Image src={data.image} alt={data.title} width={300} height={300} />
@@ -38,7 +36,6 @@ export async function getStaticPaths()
 
 export async function getStaticProps(context)
 {
-    console.log(context)
     const id = context.params.id
     const { allEvents } = await import('../../../data/data.json')
 
