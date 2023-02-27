@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import HomePageContent from "@/src/components/home/home-page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ export default function Home({ data })
         </nav>
       </header>
 
-
+      <HomePageContent />
 
       <footer className={styles.footer}>
         <p>@ {year} Some Dumbass Project</p>
