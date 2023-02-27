@@ -27,11 +27,11 @@ export default Events
 
 export async function getServerSideProps()
 {
-    const { events_categories } = await import('../../data/data.json')
+    const data = await import('../../data/data.json')
 
     return {
         props: {
-            data: events_categories
+            data
         }
     }
 }
