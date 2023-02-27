@@ -29,7 +29,9 @@ export default function Home()
       </header>
 
       <main className={styles.main}>
-
+        <div>
+          <h2>Events In London</h2>
+        </div>
       </main>
 
       <footer className={styles.footer}>
