@@ -32,6 +32,7 @@ export async function getStaticPaths()
 export async function getStaticProps(context)
 {
     console.log(context)
+    const data = await import('../../../data/data.json')
 
     return {
         props: {
