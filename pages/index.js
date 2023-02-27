@@ -7,6 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home()
 {
+  const year = new Date().getFullYear().toString()
+
   return (
     <>
       <Head>
@@ -30,7 +32,7 @@ export default function Home()
       </main>
 
       <footer className={styles.footer}>
-
+        <p>@ {year} Some Dumbass Project</p>
       </footer>
     </>
   )
