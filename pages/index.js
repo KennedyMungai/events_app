@@ -77,6 +77,7 @@ export default function Home({ title })
 export async function getServerSideProps()
 {
   const data = import('../data/data.json')
+  console.log(data)
 
   return {
     props: {
