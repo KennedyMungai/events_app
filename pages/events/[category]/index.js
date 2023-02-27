@@ -30,4 +30,6 @@ export async function getStaticPaths()
             }
         }
     })
+
+    console.log(allPaths)
 }
