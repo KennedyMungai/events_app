@@ -34,6 +34,7 @@ export async function getStaticPaths()
     console.log(allPaths)
 
     return {
-        path: allPaths
+        paths: allPaths,
+        fallback: false
     }
 }
