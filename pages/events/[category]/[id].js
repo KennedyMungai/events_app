@@ -8,3 +8,15 @@ const EventPage = () =>
 }
 
 export default EventPage
+
+export async function getStaticPaths()
+{
+    return {
+        paths: []
+    }
+}
+
+export async function getStaticProps()
+{
+
+}
