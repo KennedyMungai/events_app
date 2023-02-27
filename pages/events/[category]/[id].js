@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Event1 = () =>
+const EventPage = () =>
 {
     return (
         <div>The Single Event</div>
     )
 }
 
-export default Event1
+export default EventPage
