@@ -34,7 +34,7 @@ export async function getStaticPaths()
     {
         return {
             params: {
-                id: event.id.toString()
+                category: event.id.toString()
             }
         }
     })
