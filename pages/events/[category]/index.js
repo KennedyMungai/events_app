@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const EventsCategoryPage = () =>
+const EventsCategoryPage = ({ data }) =>
 {
     return (
         <div>
@@ -26,7 +26,7 @@ export async function getStaticPaths()
     {
         return {
             params: {
-                cat: event.id.toString()
+                id: event.id.toString()
             }
         }
     })
