@@ -74,7 +74,7 @@ export default function Home({ title })
   );
 }
 
-export function getServerSideProps()
+export async function getServerSideProps()
 {
   return {
     props: {
