@@ -3,7 +3,9 @@ import React from 'react'
 const AboutUs = () =>
 {
     return (
-        <div>about-us</div>
+        <div>
+            <h1>About Us Page</h1>
+        </div>
     )
 }
 
