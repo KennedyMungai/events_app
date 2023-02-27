@@ -6,7 +6,7 @@ const EventsCategoryPage = ({ data, pageName }) =>
 {
     return (
         <div>
-            <h1>{pageName}</h1>
+            <h1>Events in {pageName}</h1>
             <div>
                 {data.map((event) => (
                     <Link
