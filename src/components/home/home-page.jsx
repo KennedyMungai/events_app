@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const HomePage = () =>
+const HomePageContent = () =>
 {
     return (
         <main className={styles.main}>
@@ -20,4 +20,4 @@ const HomePage = () =>
     )
 }
 
-export default HomePage
+export default HomePageContent
