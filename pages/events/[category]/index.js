@@ -52,8 +52,6 @@ export async function getStaticProps(context)
 
     const data = allEvents.filter((event) => event.city === id)
 
-    console.log(data)
-
     return {
         props: {
             data,
