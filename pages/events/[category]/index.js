@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Events = () =>
+const EventsPerCity = () =>
 {
     return (
         <div>
@@ -16,4 +16,4 @@ const Events = () =>
     )
 }
 
-export default Events
+export default EventsPerCity
