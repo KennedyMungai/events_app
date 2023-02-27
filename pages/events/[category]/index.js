@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,12 +7,19 @@ const EventsCategoryPage = ({ data }) =>
     return (
         <div>
             <h1>Events In London</h1>
-            <Link href='/events/event1'>Event 1</Link>
-            <Link href='/events/event2'>Event 2</Link>
-            <Link href='/events/event3'>Event 3</Link>
-            <Link href='/events/event4'>Event 4</Link>
-            <Link href='/events/event5'>Event 5</Link>
-            <Link href='/events/event6'>Event 6</Link>
+            <div>
+                {data.map((event) => (
+                    <Link
+                        href={`/events/${event.city}/${event.id}`}
+                        key={event.id}
+                    >
+                        <Image src={event.image} alt={event.title} width={300} height={300} />
+                        <h2>{event.title}</h2>
+                        <p>{event.description}</p>
+                    </Link>
+                ))}
+            </div>
+
         </div>
     )
 }
