@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home()
 {
-  const year = new Date().getFullYear().toString()
+  const year = new Date().getFullYear().toString();
 
   return (
     <>
@@ -29,20 +29,41 @@ export default function Home()
       </header>
 
       <main className={styles.main}>
-        <Link href='/'>
+        <Link href="/">
           <Image src="" alt="" />
           <h2>Events In London</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure officiis labore tenetur rem magni eveniet velit dicta minus, ut, assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed quos eum reprehenderit error voluptatum tempora odio suscipit officia facilis numquam repellat, libero, velit ratione eligendi nisi magni esse?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure
+            officiis labore tenetur rem magni eveniet velit dicta minus, ut,
+            assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed
+            quos eum reprehenderit error voluptatum tempora odio suscipit
+            officia facilis numquam repellat, libero, velit ratione eligendi
+            nisi magni esse?
+          </p>
         </Link>
-        <Link href='/'>
+        <Link href="/">
           <Image src="" alt="" />
           <h2>Events In LA</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure officiis labore tenetur rem magni eveniet velit dicta minus, ut, assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed quos eum reprehenderit error voluptatum tempora odio suscipit officia facilis numquam repellat, libero, velit ratione eligendi nisi magni esse?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure
+            officiis labore tenetur rem magni eveniet velit dicta minus, ut,
+            assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed
+            quos eum reprehenderit error voluptatum tempora odio suscipit
+            officia facilis numquam repellat, libero, velit ratione eligendi
+            nisi magni esse?
+          </p>
         </Link>
-        <Link href='/'>
+        <Link href="/">
           <Image src="" alt="" />
           <h2>Events In Lima</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure officiis labore tenetur rem magni eveniet velit dicta minus, ut, assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed quos eum reprehenderit error voluptatum tempora odio suscipit officia facilis numquam repellat, libero, velit ratione eligendi nisi magni esse?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure
+            officiis labore tenetur rem magni eveniet velit dicta minus, ut,
+            assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed
+            quos eum reprehenderit error voluptatum tempora odio suscipit
+            officia facilis numquam repellat, libero, velit ratione eligendi
+            nisi magni esse?
+          </p>
         </Link>
       </main>
 
@@ -50,5 +71,5 @@ export default function Home()
         <p>@ {year} Some Dumbass Project</p>
       </footer>
     </>
-  )
+  );
 }
