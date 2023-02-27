@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Events = () =>
+const Events = ({ title }) =>
 {
     return (
         <div>
-            <h1>Events Page</h1>
+            <h1>{title}</h1>
             <Link href="/">
                 <Image src="" alt="" />
                 <h2>Events In London</h2>
