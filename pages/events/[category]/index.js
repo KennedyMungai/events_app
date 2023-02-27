@@ -17,3 +17,8 @@ const EventsCategoryPage = () =>
 }
 
 export default EventsCategoryPage
+
+export async function getStaticPath()
+{
+
+}
