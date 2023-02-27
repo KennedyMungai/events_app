@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home()
+export default function Home({ title })
 {
   const year = new Date().getFullYear().toString();
 
@@ -72,4 +72,13 @@ export default function Home()
       </footer>
     </>
   );
+}
+
+export function getServerSideProps()
+{
+  return {
+    props: {
+      title: "Welcome to Jurassic World, you dumb fuck"
+    }
+  }
 }
