@@ -38,3 +38,8 @@ export async function getStaticPaths()
         fallback: false
     }
 }
+
+export async function getStaticProps(context)
+{
+
+}
