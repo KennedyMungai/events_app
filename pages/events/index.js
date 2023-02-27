@@ -31,7 +31,7 @@ export async function getServerSideProps()
 
     return {
         props: {
-            data
+            data: events_categories
         }
     }
 }
