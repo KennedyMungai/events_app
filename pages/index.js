@@ -29,42 +29,16 @@ export default function Home({ data })
       </header>
 
       <main className={styles.main}>
-        <Link href="/events/london">
-          <Image src="" alt="" />
-          <h2>Events In London</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure
-            officiis labore tenetur rem magni eveniet velit dicta minus, ut,
-            assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed
-            quos eum reprehenderit error voluptatum tempora odio suscipit
-            officia facilis numquam repellat, libero, velit ratione eligendi
-            nisi magni esse?
-          </p>
-        </Link>
-        <Link href="/events/la">
-          <Image src="" alt="" />
-          <h2>Events In LA</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure
-            officiis labore tenetur rem magni eveniet velit dicta minus, ut,
-            assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed
-            quos eum reprehenderit error voluptatum tempora odio suscipit
-            officia facilis numquam repellat, libero, velit ratione eligendi
-            nisi magni esse?
-          </p>
-        </Link>
-        <Link href="/events/lima">
-          <Image src="" alt="" />
-          <h2>Events In Lima</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure
-            officiis labore tenetur rem magni eveniet velit dicta minus, ut,
-            assumenda quae praesentium vel, nemo vero alias saepe unde. Quod sed
-            quos eum reprehenderit error voluptatum tempora odio suscipit
-            officia facilis numquam repellat, libero, velit ratione eligendi
-            nisi magni esse?
-          </p>
-        </Link>
+        {
+          data.map((ev) =>
+          {
+            return (<Link key={ev.id} href={`/events/${ev.id}`}>
+              {/* <Image src={ev.image} width={100} height={100} /> */}
+              <h1>{ev.title}</h1>
+              <p>{ev.description}</p>
+            </Link>)
+          })
+        }
       </main>
 
       <footer className={styles.footer}>
