@@ -81,7 +81,7 @@ export async function getServerSideProps()
 
   return {
     props: {
-      title: "Welcome to Jurassic World, you dumb fuck"
+      data: events_categories
     }
   }
 }
