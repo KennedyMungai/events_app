@@ -11,6 +11,8 @@ export default EventPage
 
 export async function getStaticPaths()
 {
+    const { allEvents } = await import('../../../data/data.json')
+
     return {
         paths: []
     }
