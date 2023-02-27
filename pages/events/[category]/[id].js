@@ -8,8 +8,8 @@ const EventPage = ({ data }) =>
             <Image
                 src={data.image}
                 alt={data.title}
-                width={1000}
-                height={1000}
+                width={600}
+                height={600}
             />
             <h1>{data.title}</h1>
             <p>{data.description}</p>
