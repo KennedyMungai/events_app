@@ -13,8 +13,17 @@ export async function getStaticPaths()
 {
     const { allEvents } = await import('../../../data/data.json')
 
+    const allPaths = allEvents.map((path) =>
+    {
+        return {
+            params: {
+                id: path.id
+            }
+        }
+    })
+
     return {
-        paths: []
+        paths: allPaths
     }
 }
 
