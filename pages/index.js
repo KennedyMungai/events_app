@@ -28,6 +28,10 @@ export default function Home()
       <main className={styles.main}>
 
       </main>
+
+      <footer className={styles.footer}>
+
+      </footer>
     </>
   )
 }
