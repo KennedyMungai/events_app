@@ -76,6 +76,8 @@ export default function Home({ title })
 
 export async function getServerSideProps()
 {
+  const data = import('../data/data.json')
+
   return {
     props: {
       title: "Welcome to Jurassic World, you dumb fuck"
