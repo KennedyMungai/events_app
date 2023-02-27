@@ -14,7 +14,7 @@ const Events = ({ data }) =>
                         href={`/events/${event.id}`}
                         key={event.id}
                     >
-                        <Image src={event.image} alt={event.title} width='300' height='300' />
+                        <Image src={event.image} alt={event.title} width={300} height={300} />
                         <h2>{event.title}</h2>
                     </Link>
                 )
