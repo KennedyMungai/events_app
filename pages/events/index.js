@@ -5,7 +5,7 @@ import React from 'react'
 const Events = ({ data }) =>
 {
     return (
-        <div>
+        <div className='events_page'>
             <h1>Event Page</h1>
             {data.map((event) =>
             {
