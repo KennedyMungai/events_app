@@ -14,8 +14,10 @@ const EventPage = ({ data }) =>
             <h1>{data.title}</h1>
             <p>{data.description}</p>
 
-            <input type="email" name="email" id="email" />
-            <button type="submit">Submit</button>
+            <form>
+                <input type="email" name="email" id="email" />
+                <button type="submit">Submit</button>
+            </form>
         </div>
     )
 }
