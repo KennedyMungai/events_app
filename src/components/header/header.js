@@ -7,7 +7,7 @@ const Header = () =>
     return (
         <header>
             <div>
-                <Image />
+                <Image src={ } width={50} height={50} />
                 <nav>
                     <Image src="" alt="" />
                     <Link href="/">Home</Link>
