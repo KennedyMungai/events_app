@@ -15,6 +15,7 @@ const EventPage = ({ data }) =>
             <p>{data.description}</p>
 
             <form>
+                <label htmlFor="email">Email: </label>
                 <input type="email" name="email" id="email" />
                 <button type="submit">Submit</button>
             </form>
