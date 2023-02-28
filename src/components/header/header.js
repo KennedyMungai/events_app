@@ -10,9 +10,17 @@ const Header = () =>
             <div className='topNav'>
                 <Image src={Logo} width={50} height={50} alt='Logo' />
                 <nav>
-                    <Link href="/">Home</Link>
-                    <Link href="/events">Events</Link>
-                    <Link href="/about-us">About</Link>
+                    <ul>
+                        <li>
+                            <Link href="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link href="/events">Events</Link>
+                        </li>
+                        <li>
+                            <Link href="/about-us">About</Link>
+                        </li>
+                    </ul>
                 </nav>
             </div>
             <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, esse.</h1>
