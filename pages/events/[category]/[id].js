@@ -13,6 +13,15 @@ const EventPage = ({ data }) =>
 
         const emailValue = emailInputRef.current.value
         const eventId = router?.query.id
+
+        try
+        {
+            // perform a fetch request for the api 
+            // for body, emailValue and eventId
+        } catch (e)
+        {
+            console.log(e, 'Error')
+        }
     }
 
     return (
