@@ -5,7 +5,7 @@ import React from 'react'
 const EventsCategoryPage = ({ data, pageName }) =>
 {
     return (
-        <div>
+        <div className='city_specific_events'>
             <h1>Events in {pageName}</h1>
             <div>
                 {data.map((event) => (
