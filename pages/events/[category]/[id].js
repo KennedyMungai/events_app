@@ -13,8 +13,6 @@ const EventPage = ({ data }) =>
 
         const emailValue = emailInputRef.current.value
         const eventId = router?.query.id
-
-        console.log(eventId)
     }
 
     return (
