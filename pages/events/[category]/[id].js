@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 
 const EventPage = ({ data }) =>
 {
+    const emailInputRef = useRef()
+
     const submitHandler = (e) =>
     {
         e.preventDefault()
@@ -22,7 +24,13 @@ const EventPage = ({ data }) =>
             <form onSubmit={submitHandler}>
                 <label htmlFor="email">Get registered for this event: </label>
                 <div className="email_submission">
-                    <input type="email" name="email" id="email" placeholder='Please Enter Your Email' />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder='Please Enter Your Email'
+                        ref={emailInputRef}
+                    />
                     <button type="submit">Submit</button>
                 </div>
             </form>
