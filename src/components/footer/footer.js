@@ -3,7 +3,10 @@ import React from 'react'
 const footer = () =>
 {
     return (
-        <div>footer</div>
+
+        <footer className={styles.footer}>
+            <p>@ {year} Some Dumbass Project</p>
+        </footer>
     )
 }
 
