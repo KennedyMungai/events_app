@@ -6,8 +6,8 @@ import Logo from '@/public/images/logo_black.png'
 const Header = () =>
 {
     return (
-        <header className='topNav'>
-            <div>
+        <header>
+            <div className='topNav'>
                 <Image src={Logo} width={50} height={50} alt='Logo' />
                 <nav>
                     <Link href="/">Home</Link>
