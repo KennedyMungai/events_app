@@ -17,8 +17,10 @@ const HomePageContent = ({ data }) =>
                                 className='card'
                             >
                                 <Image src={ev.image} alt={ev.title} width={300} height={300} />
-                                <h1>{ev.title}</h1>
-                                <p>{ev.description}</p>
+                                <div className="content">
+                                    <h1>{ev.title}</h1>
+                                    <p>{ev.description}</p>
+                                </div>
                             </Link>)
                     })
                 }
