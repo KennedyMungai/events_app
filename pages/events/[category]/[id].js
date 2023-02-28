@@ -8,6 +8,8 @@ const EventPage = ({ data }) =>
     const submitHandler = (e) =>
     {
         e.preventDefault()
+
+        const emailValue = emailInputRef.current.value
     }
 
     return (
