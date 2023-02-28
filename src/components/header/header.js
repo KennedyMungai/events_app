@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Logo from '@/public/images/logo_black.png'
 
 const Header = () =>
 {
     return (
         <header>
             <div>
-                <Image src={ } width={50} height={50} />
+                <Image src={Logo} width={50} height={50} alt='Logo' />
                 <nav>
                     <Image src="" alt="" />
                     <Link href="/">Home</Link>
