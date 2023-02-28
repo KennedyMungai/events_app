@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '@/styles/Home.module.css'
 
 const Footer = () =>
 {
@@ -7,7 +6,7 @@ const Footer = () =>
 
     return (
 
-        <footer className={styles.footer}>
+        <footer>
             <p>@ {year} Some Dumbass Project</p>
         </footer>
     )
