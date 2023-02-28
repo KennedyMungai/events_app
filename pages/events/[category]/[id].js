@@ -5,6 +5,7 @@ import React, { useRef } from 'react'
 const EventPage = ({ data }) =>
 {
     const emailInputRef = useRef()
+    const router = useRouter()
 
     const submitHandler = (e) =>
     {
