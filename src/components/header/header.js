@@ -23,7 +23,7 @@ const Header = () =>
                     </ul>
                 </nav>
             </div>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, esse.</h1>
+            <h1>The Events App</h1>
         </header>
     )
 }
