@@ -3,9 +3,9 @@ import React from "react";
 const AboutUs = () =>
 {
     return (
-        <div>
-            <h1>About Us Page</h1>
-            <p>
+        <div className="about-us">
+            <h1 className="about-us-heading">About Us Page</h1>
+            <p className="about-us-content">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
                 itaque soluta harum debitis explicabo quam eos sapiente nesciunt at nisi
                 eveniet sit quos culpa, hic accusantium exercitationem non et quaerat
