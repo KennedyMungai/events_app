@@ -17,11 +17,11 @@ export default function Home({ data })
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
 
       <HomePageContent data={data} />
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
