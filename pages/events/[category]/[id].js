@@ -4,7 +4,7 @@ import React from 'react'
 const EventPage = ({ data }) =>
 {
     return (
-        <div>
+        <div className='single_event_details'>
             <Image
                 src={data.image}
                 alt={data.title}
