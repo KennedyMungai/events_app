@@ -32,7 +32,7 @@ export default function Home({ data })
 
       <HomePageContent data={data} />
 
-      <footer />
+      <Footer />
     </>
   );
 }
