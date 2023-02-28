@@ -23,7 +23,7 @@ const Header = () =>
                     </ul>
                 </nav>
             </div>
-            <h1>The Events App</h1>
+            <h1>Events</h1>
         </header>
     )
 }
