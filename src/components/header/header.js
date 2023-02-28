@@ -6,12 +6,15 @@ const Header = () =>
 {
     return (
         <header>
-            <nav>
-                <Image src="" alt="" />
-                <Link href="/">Home</Link>
-                <Link href="/events">Events</Link>
-                <Link href="/about-us">About</Link>
-            </nav>
+            <div>
+                <Image />
+                <nav>
+                    <Image src="" alt="" />
+                    <Link href="/">Home</Link>
+                    <Link href="/events">Events</Link>
+                    <Link href="/about-us">About</Link>
+                </nav>
+            </div>
         </header>
     )
 }
