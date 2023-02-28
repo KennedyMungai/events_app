@@ -20,7 +20,7 @@ const EventPage = ({ data }) =>
             // for body, emailValue and eventId
         } catch (e)
         {
-            console.log(e, 'Error')
+            console.log('Error', e)
         }
     }
 
