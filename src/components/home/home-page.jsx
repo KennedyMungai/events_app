@@ -16,7 +16,9 @@ const HomePageContent = ({ data }) =>
                                 href={`/events/${ev.id}`}
                                 className='card'
                             >
-                                <Image src={ev.image} alt={ev.title} width={300} height={300} />
+                                <div className="image">
+                                    <Image src={ev.image} alt={ev.title} width={300} height={300} />
+                                </div>
                                 <div className="content">
                                     <h1>{ev.title}</h1>
                                     <p>{ev.description}</p>
