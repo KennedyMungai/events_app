@@ -4,7 +4,7 @@ const AboutUs = () =>
 {
     return (
         <div className="about-us">
-            <h1 className="about-us-heading">About Us Page</h1>
+            <h1 className="about-us-heading">About Us</h1>
             <p className="about-us-content">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
                 itaque soluta harum debitis explicabo quam eos sapiente nesciunt at nisi
