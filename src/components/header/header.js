@@ -15,6 +15,7 @@ const Header = () =>
                     <Link href="/about-us">About</Link>
                 </nav>
             </div>
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, esse.</h1>
         </header>
     )
 }
