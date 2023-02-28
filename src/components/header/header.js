@@ -10,7 +10,6 @@ const Header = () =>
             <div>
                 <Image src={Logo} width={50} height={50} alt='Logo' />
                 <nav>
-                    <Image src="" alt="" />
                     <Link href="/">Home</Link>
                     <Link href="/events">Events</Link>
                     <Link href="/about-us">About</Link>
