@@ -10,8 +10,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data })
 {
-  const year = new Date().getFullYear().toString();
-
   return (
     <>
       <Head>
