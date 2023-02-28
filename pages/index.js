@@ -31,9 +31,6 @@ export default function Home({ data })
 
       <HomePageContent data={data} />
 
-      <footer className={styles.footer}>
-        <p>@ {year} Some Dumbass Project</p>
-      </footer>
     </>
   );
 }
