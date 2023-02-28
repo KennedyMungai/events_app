@@ -14,7 +14,7 @@ const Events = ({ data }) =>
                         <Link
                             href={`/events/${event.id}`}
                             key={event.id}
-                            className=''
+                            className='events_card'
                         >
                             <Image src={event.image} alt={event.title} width={300} height={300} />
                             <h2>{event.title}</h2>
