@@ -7,7 +7,7 @@ const EventPage = ({ data }) =>
     const emailInputRef = useRef()
     const router = useRouter()
 
-    const submitHandler = (e) =>
+    const submitHandler = async (e) =>
     {
         e.preventDefault()
 
