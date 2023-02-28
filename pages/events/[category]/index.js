@@ -7,7 +7,7 @@ const EventsCategoryPage = ({ data, pageName }) =>
     return (
         <div className='city_specific_events'>
             <h1>Events in {pageName}</h1>
-            <div>
+            <div className='event_data'>
                 {data.map((event) => (
                     <Link
                         href={`/events/${event.city}/${event.id}`}
