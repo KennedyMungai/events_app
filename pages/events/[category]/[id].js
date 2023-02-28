@@ -20,7 +20,7 @@ const EventPage = ({ data }) =>
             <p>{data.description}</p>
 
             <form onSubmit={submitHandler}>
-                <label htmlFor="email">Email: </label>
+                <label htmlFor="email">Get registered for this event: </label>
                 <input type="email" name="email" id="email" />
                 <button type="submit">Submit</button>
             </form>
