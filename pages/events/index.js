@@ -7,18 +7,21 @@ const Events = ({ data }) =>
     return (
         <div className='events_page'>
             <h1>Event Page</h1>
-            {data.map((event) =>
-            {
-                return (
-                    <Link
-                        href={`/events/${event.id}`}
-                        key={event.id}
-                    >
-                        <Image src={event.image} alt={event.title} width={300} height={300} />
-                        <h2>{event.title}</h2>
-                    </Link>
-                )
-            })}
+            <div className="events_page_content">
+                {data.map((event) =>
+                {
+                    return (
+                        <Link
+                            href={`/events/${event.id}`}
+                            key={event.id}
+                            className=''
+                        >
+                            <Image src={event.image} alt={event.title} width={300} height={300} />
+                            <h2>{event.title}</h2>
+                        </Link>
+                    )
+                })}
+            </div>
         </div>
     )
 }
