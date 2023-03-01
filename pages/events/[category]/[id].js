@@ -31,6 +31,11 @@ const EventPage = ({ data }) =>
                 }
             })
 
+            if (!response.ok)
+            {
+                throw new Error(`Error: ${response.status}`)
+            }
+
             const data = await response.json()
         } catch (e)
         {
