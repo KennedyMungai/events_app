@@ -2,7 +2,7 @@ import path from 'path'
 
 const buildPath = () =>
 {
-    path.join(process.cwd, 'data', 'data.json')
+    return path.join(process.cwd, 'data', 'data.json')
 }
 
 export default function handler(req, res)
