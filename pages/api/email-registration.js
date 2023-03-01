@@ -8,7 +8,7 @@ export default function handler(req, res)
 
         res.status(200).json(
             {
-                message: `You have been registered successfully0`
+                message: `You have been registered successfully with the email: ${email}`
             }
         )
     }
