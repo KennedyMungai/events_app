@@ -19,7 +19,7 @@ const EventPage = ({ data }) =>
 
         if (!emailValue.match(validRegex))
         {
-
+            setMessage('Please introduce the correct email address')
         }
 
         try
