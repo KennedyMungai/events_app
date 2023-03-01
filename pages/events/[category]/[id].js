@@ -47,6 +47,8 @@ const EventPage = ({ data }) =>
             const data = await response.json()
 
             setMessage(data.message)
+
+            emailInputRef.current.value = ''
         } catch (e)
         {
             console.log('Error', e)
