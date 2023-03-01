@@ -47,8 +47,6 @@ const EventPage = ({ data }) =>
             const data = await response.json()
 
             setMessage(data.message)
-
-            console.log('POST', data)
         } catch (e)
         {
             console.log('Error', e)
