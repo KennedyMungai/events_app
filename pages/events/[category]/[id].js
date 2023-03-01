@@ -68,7 +68,7 @@ const EventPage = ({ data }) =>
                 <label htmlFor="email">Get registered for this event: </label>
                 <div className="email_submission">
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
                         placeholder='Please Enter Your Email'
