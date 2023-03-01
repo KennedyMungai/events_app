@@ -18,6 +18,7 @@ const EventPage = ({ data }) =>
         {
             // perform a fetch request for the api 
             // for body, emailValue and eventId
+            const response = await fetch('/api/email-registration')
         } catch (e)
         {
             console.log('Error', e)
