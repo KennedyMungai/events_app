@@ -19,7 +19,7 @@ const EventPage = ({ data }) =>
 
         if (!emailValue.match(validRegex))
         {
-            setMessage('Please introduce the correct email address')
+            setMessage('Please write the correct email address')
         }
 
         try
@@ -68,7 +68,7 @@ const EventPage = ({ data }) =>
                 <label htmlFor="email">Get registered for this event: </label>
                 <div className="email_submission">
                     <input
-                        type="email"
+                        type="text"
                         name="email"
                         id="email"
                         placeholder='Please Enter Your Email'
