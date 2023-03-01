@@ -22,6 +22,7 @@ export default function handler(req, res)
     // Extract the data (Inside the allEvents object)
 
     const filePath = buildPath()
+    const data = extractData(filePath)
 
     if (method === 'POST')
     {
