@@ -46,7 +46,7 @@ export default function handler(req, res)
             {
                 if (event.emails_registered.includes(email))
                 {
-                    res.status(201).json(
+                    res.status(401).json(
                         {
                             message: 'This email has already been registered'
                         }
