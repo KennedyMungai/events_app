@@ -59,6 +59,8 @@ export default function handler(req, res)
             }
         })
 
+        fs.writeFileSync(filePath, JSON.stringify({ event_categories, allEvents: newAllEvents }))
+
         res
             .status(200)
             .json(
