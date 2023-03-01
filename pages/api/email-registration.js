@@ -51,6 +51,8 @@ export default function handler(req, res)
                             message: 'This email has already been registered'
                         }
                     )
+
+                    return event
                 }
 
                 return {
