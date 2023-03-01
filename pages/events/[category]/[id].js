@@ -18,7 +18,18 @@ const EventPage = ({ data }) =>
         {
             // perform a fetch request for the api 
             // for body, emailValue and eventId
-            const response = await fetch('/api/email-registration')
+            const response = await fetch('/api/email-registration', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: {
+                    body: JSON.stringify({
+                        email: emailValue,
+                        eventId
+                    })
+                }
+            })
         } catch (e)
         {
             console.log('Error', e)
