@@ -30,6 +30,8 @@ const EventPage = ({ data }) =>
                     })
                 }
             })
+
+            const data = await response.json()
         } catch (e)
         {
             console.log('Error', e)
