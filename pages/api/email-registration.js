@@ -24,6 +24,8 @@ export default function handler(req, res)
     const filePath = buildPath()
     const data = extractData(filePath)
 
+    const { allEvents } = data
+
     if (method === 'POST')
     {
         const { email, eventId } = req.body
