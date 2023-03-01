@@ -1,3 +1,10 @@
+import path from 'path'
+
+const buildPath = () =>
+{
+
+}
+
 export default function handler(req, res)
 {
     const { method } = req
