@@ -21,6 +21,7 @@ export default function handler(req, res)
     // Access the data
     // Extract the data (Inside the allEvents object)
 
+    const filePath = buildPath()
 
     if (method === 'POST')
     {
