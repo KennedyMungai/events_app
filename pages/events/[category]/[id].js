@@ -6,6 +6,7 @@ const EventPage = ({ data }) =>
 {
     const emailInputRef = useRef()
     const router = useRouter()
+    const [message, setMessage] = useState('')
 
     const submitHandler = async (e) =>
     {
