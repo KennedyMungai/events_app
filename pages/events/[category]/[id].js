@@ -77,7 +77,9 @@ const EventPage = ({ data }) =>
                     <button type="submit">Submit</button>
                 </div>
             </form>
-            <p>{message}</p>
+            <p>
+                {message}
+            </p>
         </div>
     )
 }
