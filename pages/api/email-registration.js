@@ -44,7 +44,7 @@ export default function handler(req, res)
         {
             if (event.id === eventId)
             {
-                if (event.email_registered.includes(email))
+                if (event.emails_registered.includes(email))
                 {
                     res.status(201).json(
                         {
@@ -54,7 +54,7 @@ export default function handler(req, res)
                 }
 
                 return {
-                    ...event, email_registered: [...event.email_registered, email]
+                    ...event, emails_registered: [...event.emails_registered, email]
                 }
             }
         })
