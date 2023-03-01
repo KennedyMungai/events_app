@@ -40,6 +40,17 @@ export default function handler(req, res)
     {
         const { email, eventId } = req.body
 
+        if (!email | !email.includes('@'))
+        {
+            res.status(422).json(
+                {
+                    message: 'Invalid email address'
+                }
+            )
+
+            return
+        }
+
         const newAllEvents = allEvents.map((event) => 
         {
             if (event.id === eventId)
