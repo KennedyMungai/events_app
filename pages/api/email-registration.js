@@ -6,7 +6,7 @@ const buildPath = () =>
     return path.join(process.cwd, 'data', 'data.json')
 }
 
-const extractData = () => 
+const extractData = (filePath) => 
 {
 
 }
