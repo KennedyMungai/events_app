@@ -6,6 +6,11 @@ const buildPath = () =>
     return path.join(process.cwd, 'data', 'data.json')
 }
 
+const extractData = () => 
+{
+
+}
+
 export default function handler(req, res)
 {
     const { method } = req
