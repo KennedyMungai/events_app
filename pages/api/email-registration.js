@@ -8,7 +8,10 @@ const buildPath = () =>
 
 const extractData = (filePath) => 
 {
+    const jsonData = fs.readFileSync(filePath)
+    const data = JSON.parse(jsonData)
 
+    return data
 }
 
 export default function handler(req, res)
