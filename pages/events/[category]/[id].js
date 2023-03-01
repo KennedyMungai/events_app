@@ -14,6 +14,8 @@ const EventPage = ({ data }) =>
         const emailValue = emailInputRef.current.value
         const eventId = router?.query.id
 
+        const validRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
         try
         {
             // perform a fetch request for the api 
